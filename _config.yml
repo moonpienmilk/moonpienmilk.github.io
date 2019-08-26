@@ -2,7 +2,7 @@
 title:              "moonpie&milk test"
 description:        ""
 author_name:        "moonpie&milk" # change this to your name
-logo_url:           /assets/touch-icon/touch-icon.png # Get it from GitHub API: https://api.github.com/users/<username>
+logo_url:           https://raw.githubusercontent.com/moonpienmilk/moonpienmilk.github.io/master/assets/touch-icon.png # Get it from GitHub API: https://api.github.com/users/<username>
 
 # Site Settings
 url:                https://moonpienmilk.github.io # main url
