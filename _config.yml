@@ -1,14 +1,21 @@
 # Site Info
-title:              "moonpie&milk test"
+title:              "moonpie&milk"
 description:        ""
-author_name:        "moonpie&milk" # change this to your name
+google_verify:       # Put your Google Verification here
+google_analytics:    # Put your Google Analytics code
+
+# Author Info
+author_name:        "moonpie&milk" # Your name here
+author_email:       moonpiemilk@gmail.com # Your email here
+author_gravatar:     # Your Gravatar md5 hash here for logo
+twitter_username:    # Your Twitter username here
+github_username:     # Your GitHub username here
 
 # Site Settings
-url:                https://moonpienmilk.github.io # main url
-baseurl:            /the-plain
-permalink:          /:title # Post permalink
+baseurl:            "" # Base URL must end WITHOUT a slash, default: ""
+permalink:          /notes/:title # Post permalink
 timezone:           Asia/Seoul # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-mathjax:            true  # enables support for mathjax - set to 'false' to disable
+mathjax:            true  # enables support for mathjax - set to false to disable
 
 # Site Build
 highlighter:        rouge
@@ -20,8 +27,8 @@ sass:
 
 # Other Params
 include:            [ "robots.txt" ]
-exclude:            [ "LICENSE", "README.md", "CNAME", "vendor", "Gemfile", "script" ]
-plugins:
+exclude:            [ "LICENSE", "README.md", "CNAME", "vendor", "Gemfile" ]
+gems:
   - jekyll-sitemap
 
 
@@ -42,3 +49,5 @@ defaults:
       type:         "posts"
     values:
       layout:       "post"
+
+theme: jekyll-theme-minimal
