@@ -1,31 +1,18 @@
 ---
-layout: default
+layout: page
+title: (Ale)jandro Gomez-Londoño
 ---
 
 <section>
+  {% capture index %}{% include index.md %}{% endcapture %}
+  {{ index | markdownify }}
 
-	{% for post in site.posts %}
-		{% unless post.next %}
-			<h3>{{ post.date | date: '%Y' }} &#172;</h3>
-		{% else %}
-			{% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
-			{% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
-			{% if year != nyear %}
-				<h3>{{ post.date | date: '%Y' }} &#172;</h3>
-			{% endif %}
-		{% endunless %}
+  <hr/>
+  <h1> Useful links </h1>
+  <lu>
+    <li><a href="blog"> Blog </a></li>
+    <li><a href="https://github.com/agomezl"> Github </a></li>
+  </lu>
 
-		<ul>
-			<li>
-				<div class="post-date">
-					<span>{{ post.date | date: "%b %d" }}</span>
-				</div>
-				<div class="title">
-					<a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-				</div>
-			</li>
-		</ul>
-
-	{% endfor %}
 
 </section>
